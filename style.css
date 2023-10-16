@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+* {
+  font-family: "Lato"; 
+}
+
+body {
+  background-color: rgb(246, 230, 232);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.calculator {
+    width: 400px;
+    border: 2px solid;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: pink;
+  }
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.span-2 {
+  grid-column: span 2;
+}
+
+.screen {
+  padding: 10px 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+  background-color: white;
+  /* word-wrap: break-word;
+  word-break: break-all;  */
+}
+
+.screen-current {
+  min-height: 64px;
+  font-size: 40px;
+}
+
+.btn {
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:active {
+  background-color: #ccc;
+}
+
+.copyright {
+  padding: 20px;
+  text-align: center;
+  background: var(--second-color);
+}
